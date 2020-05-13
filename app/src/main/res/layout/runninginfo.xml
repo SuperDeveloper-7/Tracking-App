@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@android:string/ok"
+        app:layout_constraintEnd_toEndOf="@+id/timeText"
+        app:layout_constraintStart_toStartOf="@+id/timeText"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <TextView
+        android:id="@+id/distText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/running_distance_0_km"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weeklyBtn" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/running_time_0_min"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/distText"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/distText"
+        app:layout_constraintTop_toBottomOf="@+id/distText" />
+
+    <Button
+        android:id="@+id/dailyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Daily"
+        app:layout_constraintEnd_toStartOf="@+id/weeklyBtn"
+        app:layout_constraintTop_toTopOf="@+id/weeklyBtn" />
+
+    <Button
+        android:id="@+id/weeklyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Weekly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/monthlyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Monthly"
+        app:layout_constraintStart_toEndOf="@+id/weeklyBtn"
+        app:layout_constraintTop_toTopOf="@+id/weeklyBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RunningDiary</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="start_running">Start Running</string>
+    <string name="end_running">End Running</string>
+    <string name="running_distance_0_km">Running Distance: 0 km</string>
+    <string name="running_time_0_min">Running Time: 0 min</string>
+</resources>
